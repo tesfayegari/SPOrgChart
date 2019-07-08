@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Learning Bootstrap 4</title>
+  </head>
+  <body>
+    <nav class="nav navbar navbar-dark bg-primary navbar-expand-sm">
+      <div class="container">
+        <div class="navbar-brand d-none d-lg-block">
+          Wisdom Pet Medicine
+        </div>
+        <div class="navbar-nav mr-auto">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link active">Mission</a>
+          <a href="#" class="nav-item nav-link active">Services</a>
+          <a href="#" class="nav-item nav-link active">Staf</a>
+          <a href="#" class="nav-item nav-link active">Testimonials</a>
+        </div>
+        <form class="form-inline d-none d-md-block">
+          <div class="input-group">
+            <label for="search" class="sr-only">Search</label>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="form-control"
+              value=""
+              required="required"
+              title="Search"
+              placeholder="Search for..."
+            />
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">Go</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <h2>Help Another Pet</h2>
+
+      <form>
+        <fieldset class="form-group">
+          <legend>Your Info</legend>
+
+          <div class="form-group">
+            <label class="form-control-label" for="name">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <!-- form-group -->
+
+          <div class="form-group">
+            <label class="form-control-label" for="owneremail">Email</label>
+            <input
+              class="form-control"
+              type="text"
+              id="owneremail"
+              placeholder="Address"
+            />
+          </div>
+          <!-- form-group -->
+
+          <div class="form-group">
+            <label class="form-control-label" for="donationamt"
+              >Donation Amount</label
+            >
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <input
+                    type="checkbox"
+                    id="confirm-donation"
+                    checked
+                    aria-label="Checkbox for confirming donation"
+                  />
+                </div>
+                <div class="input-group-text">$</div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="donationamt"
+                placeholder="Amount"
+              />
+              <div class="input-group-append">
+                <div class="input-group-text">.00</div>
+              </div>
+            </div>
+          </div>
+          <!-- form-group -->
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </fieldset>
+        <!-- fieldset -->
+      </form>
+    </div>
+    <!-- content container -->
+
+    <!-- Another example  -->
+    <div class="container mt-4">
+      <section class="content">
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          <strong>Holy guacamole!</strong> You should check in on some of those
+          fields below.
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <h1>Where can I get <small>Some Stuff</small> ?</h1>
+        <p>
+          There are many variations of passages of
+          <a
+            href="#"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Some text"
+            >Lorem Ipsum</a
+          >
+          available, but the majority have suffered alteration in some form, by
+          injected humour, or randomised words which don't look even slightly
+          believable. If you are going to use a passage of Lorem Ipsum, you need
+          to be sure there isn't anything embarrassing hidden in the middle of
+          text. All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined chunks as necessary, making this the first true generator
+          on the Internet. It uses a dictionary of over 200 Latin words,
+          combined with a handful of model sentence structures, to generate
+          Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+          therefore always free from repetition, injected humour, or
+          non-characteristic words etc.
+        </p>
+        <P>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the
+          theory of ethics, very popular during the Renaissance. The first line
+          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+          section 1.10.32.
+        </P>
+      </section>
+    </div>
+
+    <!-- grid example -->
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
